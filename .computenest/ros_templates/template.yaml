@@ -299,6 +299,7 @@ Resources:
             EOF
 
             echo 'POSTGRES_PASSWORD=${POSTGRES_PASSWORD}' >> /root/application/docker_compose/.env
+            bash -c 'echo "SECRET_KEY_BASE=$(openssl rand -hex 32)" >> /root/application/docker_compose/.env'
             systemctl start docker-compose-app
           - RegionId:
               Ref: ALIYUN::Region
