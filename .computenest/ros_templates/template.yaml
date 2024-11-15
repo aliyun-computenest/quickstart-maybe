@@ -189,7 +189,9 @@ Parameters:
             - ${VpcOption}
   POSTGRES_PASSWORD:
     Type: String
-    Label: 数据库密码
+    Label:
+      zh-cn: 数据库密码
+      en: Database Password
     Default: PASSWORD123
 Resources:
   # 新建vpc
@@ -269,8 +271,8 @@ Resources:
     Properties:
       InstanceIds:
         Fn::GetAtt:
-        - InstanceGroup
-        - InstanceIds
+          - InstanceGroup
+          - InstanceIds
       Type: RunShellScript
       Sync: true
       Timeout: 3600
@@ -313,10 +315,10 @@ Outputs:
         - http://${ServerAddress}:3000
         - ServerAddress:
             Fn::Select:
-            - 0
-            - Fn::GetAtt:
-              - InstanceGroup
-              - PublicIps
+              - 0
+              - Fn::GetAtt:
+                  - InstanceGroup
+                  - PublicIps
 Metadata:
   ALIYUN::ROS::Interface:
     ParameterGroups:
@@ -325,12 +327,14 @@ Metadata:
           - PayPeriodUnit
           - PayPeriod
         Label:
-          default: 付费类型配置
+          zh-cn: 付费类型配置
+          en: Payment Type Configuration
       - Parameters:
           - EcsInstanceType
           - InstancePassword
         Label:
-          default: 资源配置
+          zh-cn: 资源配置
+          en: Resources Configuration
       - Parameters:
           - ZoneId
           - VpcOption
@@ -339,7 +343,8 @@ Metadata:
           - VpcCidrBlock
           - VSwitchCidrBlock
         Label:
-          default: 可用区配置
+          zh-cn: 可用区配置
+          en: Availability Zone Configuration
       - Parameters:
           - POSTGRES_PASSWORD
         Label:
