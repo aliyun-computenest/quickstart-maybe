@@ -29,7 +29,7 @@ The costs associated with deploying the community edition in ComputeNest mainly 
 
 ## Deployment Architecture
 
-![](./ img-en/deploy.png)
+![](./img-en/deploy.png)
 
 ## Parameter Description
 
@@ -46,9 +46,9 @@ The costs associated with deploying the community edition in ComputeNest mainly 
 
 ## Deployment Process
 
-1. Access ComputeNest [Deployment Link](https://computenest.console.aliyun.com/service/instance/create/cn-hangzhou?type=user&ServiceName=maybe社区版) and fill in the deployment parameters as prompted.
+1. Access ComputeNest [Deployment Link](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=Maybe%E7%A4%BE%E5%8C%BA%E7%89%88) and fill in the deployment parameters as prompted.
 2. Fill in the instance parameters. ![](./img-en/param1.png)
-3. Choose to create a new dedicated network or use an existing Virtual Private Cloud as needed. Fill in the availability zone and network parameters, then click "Next: Confirm Order". ![](./ img-en/param2.png)
+3. Choose to create a new dedicated network or use an existing Virtual Private Cloud as needed. Fill in the availability zone and network parameters, then click "Next: Confirm Order". ![](./img-en/param2.png)
 4. Click "Create Now" and wait for the service instance deployment to complete. ![](./img-en/param3.png)
 5. After the service instance deployment is complete, click on the instance ID to enter the details page. ![](./img-en/serviceInstance2.png)
 6. Access the service instance usage URL. ![](./img-en/serviceInstance3.png)
